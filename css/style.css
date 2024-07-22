@@ -1,0 +1,117 @@
+* {
+    font-family: Kode Mono, monospace;
+}
+
+.form-group{
+    width: 50%;
+}
+
+.container-div{
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.py-2{
+    background-color: #0F1120;
+}
+
+.main p{
+    background-color: lightgray;
+    padding: 10px;
+}
+
+main h1{
+    font-family: Monofett, monospace;
+    padding: 2rem 0 ;
+}
+
+body :where(aside, main){
+    margin: 0.5em;
+    padding: 0;
+}
+
+.ul{
+    display: flex;
+    position: relative;
+    height: 10vh;
+    margin: 0; padding: 0;
+}
+
+.nav-item{
+    list-style: none;
+    margin-left: 2rem;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+
+body {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode{
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+body.dark-mode .container-div{
+    background-color: #1f1f1f;
+}
+
+
+header{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+}
+.left{
+
+    padding: 3em 0 3em 3em;
+    flex: 1 1 100px;
+}
+
+main{
+    padding: 1em 0 3em 0;
+    flex: 5 5 150px;
+}
+
+.right{
+    padding: 3em 0 3em 1em;
+    flex: 1 1 100px;
+}
+
+footer{
+    background: rgba(234, 234, 234, 0.22);
+    padding: 1em 0 1em 0;
+}
+
+@media all and (max-width: 550px){
+    .main{
+        flex-direction: column;
+    }
+    main{
+        padding: 5em 0 5em 0;
+    }
+}
